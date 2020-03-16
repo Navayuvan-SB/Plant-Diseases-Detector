@@ -15,6 +15,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Gravity
 import kotlinx.android.synthetic.main.activity_main.*;
 import java.io.IOException
+import android.text.method.ScrollingMovementMethod
+
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var mClassifier: Classifier
@@ -56,8 +59,9 @@ class MainActivity : AppCompatActivity() {
                 val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
                 val default: String = results?.title+"\n Confidence:"+results?.confidence
                 val title = results?.title
+            mResultTextView.movementMethod = ScrollingMovementMethod();
 
-                if (title == "apple apple scab") {
+            if (title == "apple apple scab") {
                     val display = default + "\n Remedy: Rake under trees and destroy infected leaves to reduce the number of fungal spores available to start the disease cycle over again next spring."
                     mResultTextView.text= display
                 }
