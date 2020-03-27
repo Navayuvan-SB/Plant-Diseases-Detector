@@ -1,0 +1,5 @@
+Notebook 1: https://colab.research.google.com/github/navayuvan-sb/Plant-Diseases-Detector/blob/master/Plant_Diseases_Detection_with_TF2_V2.ipynb
+
+
+
+Notebook 2: https://colab.research.google.com/github/navayuvan-sb/Plant-Diseases-Detector/blob/master/Plant_Diseases_Detection_with_TF2_V4.ipynb
